@@ -13,3 +13,7 @@ python3 -m pip install -U discord.py[voice]
 Windows
 py -3 -m pip install -U discord.py[voice]
 ```
+
+### Creating the bot
+At(https://discord.com/developers/applications) you need to create 2 applications, then go in these applications and create an bot.
+Then you go in the category bot an turn the first 2 options on and the last 3 off.
