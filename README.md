@@ -17,3 +17,11 @@ py -3 -m pip install -U discord.py[voice]
 ### Creating the bot
 At(https://discord.com/developers/applications) you need to create 2 applications, then go in these applications and create an bot.
 Then you go in the category bot an turn the first 2 options on and the last 3 off.
+Now you need to to go to OAuth2 and select "bot" and "applications.commands", then set the authorization to admin, now you need to invite your 2 bots to 
+your server. Now you need to go to the option "bot" and Reset the token. Everbody who have the token, can do everything with your bot, but you can reset 
+the token
+
+### Connect the script to Discord
+You have 1 token from your main bot and 1 token from your Server-Stats bot. Now 
+you need to replace "Your Token" with the token from your bot. So the token from the main-Bot in the main script and the token from the Server-Stats Bot in 
+the server-stats script.
