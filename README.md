@@ -77,7 +77,7 @@ and put in the right memberrole-id for all the 5 memberroles, you need to do the
 When you want that your bot works all time, you need to host the bot, you can do that on your computer, but for that your computer needs to be
 permanently on, so your bot works all time. You can host your bot on a raspberry pi 4 (https://www.raspberrypi.com/products/raspberry-pi-4-model-b/?
 variant=raspberry-pi-4-model-b-4gb), the best pi for this is an pi4 with 4gb in a case with an fan. You usally need to install DiscordPY on the py and 
-run the scripts. When you want remote access you need to active VNC Server in the settings (Settings>Raspberry_Pi>configuration>interfaces>VNC), then you need to go into the terminal then go to
+run the scripts. When you want remote access you need to active VNC Server in the settings (Settings>Raspberry_Pi>configuration>interfaces>VNC), then you need to go into the terminal, then go to
 ```
 sudo raspi-config
 ```
