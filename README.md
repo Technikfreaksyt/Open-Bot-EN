@@ -25,3 +25,24 @@ the token
 You have 1 token from your main bot and 1 token from your Server-Stats bot. Now 
 you need to replace "Your Token" with the token from your bot. So the token from the main-Bot in the main script and the token from the Server-Stats Bot in 
 the server-stats script.
+
+### The on_message(message) function
+At the event:
+```
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+```
+is the function, that he bot can answer to an message:
+```
+    if message.content.startswith('hello'):
+        await message.channel.send('Hello!')
+```
+With this function the bot caan do a lot of things, like the voicechannel or the suppport function.
+
+### Set the bot status
+```
+activity = discord.Game(name="Akivität deines Bots", type=1)
+```
+
