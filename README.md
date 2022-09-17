@@ -63,3 +63,14 @@ with your own welcome message, when you want that the bot says the name of new m
 you need to have the"{member.mention}.
 
 ### Set up the support function
+```
+channel = await guild.create_text_channel(str(message.author))
+         await channel.set_permissions(message.author,send_messages=True,read_message_history=True,read_messages=True)
+         await channel.set_permissions(discord.utils.get(message.author.guild.roles, id = ("Member") ),send_messages=False,read_messages =                        False,read_message_history=False)
+         await channel.set_permissions(discord.utils.get(message.author.guild.roles, id = ("Staff") ),send_messages=True,read_messages =                          True,read_message_history=True)
+```
+Here you can see "Member" and "Staff", you need to set the permissions for every role, so not everybody can see that this channel exist, you can 
+delete "Member" and the quotation marks and replace it with the ID of 1 memberroles, when you have e.g 5 Memberroles, you need to copy the memberline
+and put in the right memberrole-id for all the 5 memberroles, you need to do the same with th e roles for "Staff"
+
+### Hosting
