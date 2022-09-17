@@ -43,6 +43,16 @@ With this function the bot caan do a lot of things, like the voicechannel or the
 
 ### Set the bot status
 ```
-activity = discord.Game(name="Akivität deines Bots", type=1)
+activity = discord.Game(name="Activity", type=1)
 ```
+You can replace the "activity" with everything what you want
 
+### Set up the welcome and autoroles function
+```
+autoroles = {
+    "ID of your Server": {'memberoles': ["Memberroles"],  }
+```
+You need to delete the "ID of your Server" with the quotation marks and replace it with the ID of your server, then delete "Memberroles" with the quotation marks and 
+replace it with the standard memberrole id´s, now you need to delete "ID from your Welcome channel" with the quotation marks and replace it with the ID of the welcome 
+channel.
+You can replace the "Hi {member.mention} willkommen auf meinem Server!" with your own welcome message
