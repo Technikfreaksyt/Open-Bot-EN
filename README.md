@@ -55,4 +55,11 @@ autoroles = {
 You need to delete the "ID of your Server" with the quotation marks and replace it with the ID of your server, then delete "Memberroles" with the quotation marks and 
 replace it with the standard memberrole id´s, now you need to delete "ID from your Welcome channel" with the quotation marks and replace it with the ID of the welcome 
 channel.
-You can replace the "Hi {member.mention} willkommen auf meinem Server!" with your own welcome message
+You can replace the 
+```
+"Hi {member.mention} willkommen auf meinem Server!"
+```
+with your own welcome message, when you want that the bot says the name of new member,
+you need to have the"{member.mention}.
+
+### Set up the support function
