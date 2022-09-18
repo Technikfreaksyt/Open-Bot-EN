@@ -57,7 +57,7 @@ replace it with the standard memberrole id´s, now you need to delete "ID from y
 channel.
 You can replace the 
 ```
-"Hi {member.mention} willkommen auf meinem Server!"
+"Hi {member.mention}"
 ```
 with your own welcome message, when you want that the bot says the name of new member,
 you need to have the"{member.mention}.
