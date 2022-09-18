@@ -33,7 +33,7 @@ autoroles = {
 
 @client.event
 async def on_member_join(member):
-    await client.get_channel("ID from your Welcome Channel").send (f"Hi {member.mention} willkommen auf meinem Server!")
+    await client.get_channel("ID from your Welcome Channel").send (f"Hi {member.mention}")
     guild: guild = member.guild 
     autoguild  = autoroles.get(guild.id)
     if autoguild: autoguild  ['memberoles']
@@ -59,7 +59,7 @@ async def on_message(message):
 
     if message.content.startswith('//support'):
          guild = message.guild
-         await message.channel.send('Das Ticket wird erstellt, bitte warten!')
+         await message.channel.send('Create ticket, please wait')
          await message.channel.purge(limit=2)
         
          channel = await guild.create_text_channel(str(message.author))
@@ -71,7 +71,7 @@ async def on_message(message):
         guild = message.guild   
         voicechannel = await guild.create_voice_channel(f"vc {str(message.author)}")   
 
-        await message.channel.send('Der Sprachkanal wird erstellt, bitte warten!') 
+        await message.channel.send('create voicchannel, please wait) 
     
         def checkjoin(member, before, after):
 
